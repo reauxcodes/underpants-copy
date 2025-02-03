@@ -47,7 +47,15 @@ _.identity = function (value){
 */
 
 _.typeOf = function(value){
-    return 
+    if (value === null){
+            return 'null';
+        } else if (Array.isArray(value)){
+            return 'array'
+        } else if (value instanceof Date){
+            return 'date';
+        } else {
+            return typeof value;
+    }
 
 }
 
@@ -70,7 +78,9 @@ _.typeOf = function(value){
 */
 
 _.first = function(array, number){
-
+if (Array.isArray !== array){
+    return [];
+}
     
 }
 
@@ -112,7 +122,7 @@ _.last = function(array, number){
 *   _.indexOf(["a","b","c"], "d") -> -1
 */
 
-_.indexOf = function(){
+_.indexOf = function(array, value){
     
 }
 
@@ -132,8 +142,8 @@ _.indexOf = function(){
 */
 
 _.contains = function(array, value){
-    if (){
-
+    if (array.includes(value)){
+        return true;
     } else {
         return false;
     }
@@ -170,6 +180,9 @@ _.each = function(collection, func){
 *   _.unique([1,2,2,4,5,6,5,2]) -> [1,2,4,5,6]
 */
 
+_.unique = function(){
+    
+}
 
 /** _.filter
 * Arguments:
