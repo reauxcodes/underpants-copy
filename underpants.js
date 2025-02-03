@@ -21,6 +21,10 @@ var _ = {};
 *   _.identity({a: "b"}) === {a: "b"}
 */
 
+_.identity = function (value){
+    return value;
+}
+ 
 
 /** _.typeOf
 * Arguments:
@@ -42,6 +46,10 @@ var _ = {};
 * _.typeOf([1,2,3]) -> "array"
 */
 
+_.typeOf = function(value){
+    return 
+
+}
 
 /** _.first
 * Arguments:
@@ -61,6 +69,10 @@ var _ = {};
 *   _.first(["a", "b", "c"], 2) -> ["a", "b"]
 */
 
+_.first = function(array, number){
+
+    
+}
 
 /** _.last
 * Arguments:
@@ -80,6 +92,9 @@ var _ = {};
 *   _.last(["a", "b", "c"], 2) -> ["b", "c"]
 */
 
+_.last = function(array, number){
+    
+}
 
 /** _.indexOf
 * Arguments:
@@ -97,6 +112,9 @@ var _ = {};
 *   _.indexOf(["a","b","c"], "d") -> -1
 */
 
+_.indexOf = function(){
+    
+}
 
 /** _.contains
 * Arguments:
@@ -113,6 +131,14 @@ var _ = {};
 *   _.contains([1,"two", 3.14], "two") -> true
 */
 
+_.contains = function(array, value){
+    if (){
+
+    } else {
+        return false;
+    }
+    
+}
 
 /** _.each
 * Arguments:
@@ -130,6 +156,9 @@ var _ = {};
 *      -> should log "a" "b" "c" to the console
 */
 
+_.each = function(collection, func){
+    
+}
 
 /** _.unique
 * Arguments:
